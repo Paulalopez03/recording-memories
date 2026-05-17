@@ -17,8 +17,8 @@ function App() {
   const loadPhotos = async () => {
     try {
       // Importar dinámicamente todas las fotos de las carpetas
-      const amigosModules = import.meta.glob('./fotos/Amigos/*.{jpg,jpeg,png,webp}')
-      const naturalezaModules = import.meta.glob('./fotos/Naturaleza/*.{jpg,jpeg,png,webp}')
+      const amigosModules = import.meta.glob('/src/fotos/Amigos/*.{jpg,jpeg,png,webp}')
+      const naturalezaModules = import.meta.glob('/src/fotos/Naturaleza/*.{jpg,jpeg,png,webp}')
 
       const photosArray = []
       let id = 1
@@ -28,7 +28,7 @@ function App() {
         const filename = path.split('/').pop().split('.')[0]
         photosArray.push({
           id: id++,
-          src: path,
+          src: path.replace('/src', ''),
           category: 'Amigos',
           title: filename.replace(/-/g, ' '),
           date: new Date('2024-05-20'),
@@ -40,7 +40,7 @@ function App() {
         const filename = path.split('/').pop().split('.')[0]
         photosArray.push({
           id: id++,
-          src: path,
+          src: path.replace('/src', ''),
           category: 'Naturaleza',
           title: filename.replace(/-/g, ' '),
           date: new Date('2024-05-15'),
