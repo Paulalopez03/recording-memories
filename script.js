@@ -61,7 +61,7 @@ function loadPhotos() {
     // Amigos
     {
       id: 1,
-      src: '../fotos/Amigos/photo1.jpg',
+      src: './fotos/Amigos/photo1.jpg',
       category: 'Amigos',
       title: 'Momento',
       date: new Date('2024-05-20'),
@@ -70,7 +70,7 @@ function loadPhotos() {
     },
     {
       id: 2,
-      src: '../fotos/Amigos/photo2.jpg',
+      src: './fotos/Amigos/photo2.jpg',
       category: 'Amigos',
       title: 'Sonrisa',
       date: new Date('2024-05-19'),
@@ -79,7 +79,7 @@ function loadPhotos() {
     },
     {
       id: 3,
-      src: '../fotos/Amigos/photo3.jpg',
+      src: './fotos/Amigos/photo3.jpg',
       category: 'Amigos',
       title: 'Encuentro',
       date: new Date('2024-05-18'),
@@ -90,7 +90,7 @@ function loadPhotos() {
     // Naturaleza
     {
       id: 4,
-      src: '../fotos/Naturaleza/photo1.jpg',
+      src: './fotos/Naturaleza/photo1.jpg',
       category: 'Naturaleza',
       title: 'Bosque',
       date: new Date('2024-05-17'),
@@ -99,7 +99,7 @@ function loadPhotos() {
     },
     {
       id: 5,
-      src: '../fotos/Naturaleza/photo2.jpg',
+      src: './fotos/Naturaleza/photo2.jpg',
       category: 'Naturaleza',
       title: 'Flores',
       date: new Date('2024-05-16'),
@@ -108,7 +108,7 @@ function loadPhotos() {
     },
     {
       id: 6,
-      src: '../fotos/Naturaleza/photo3.jpg',
+      src: './fotos/Naturaleza/photo3.jpg',
       category: 'Naturaleza',
       title: 'Luz natural',
       date: new Date('2024-05-15'),
@@ -117,7 +117,7 @@ function loadPhotos() {
     },
 
     // AGREGA MÁS AQUÍ
-    // { id: 7, src: '../fotos/Viajes/photo1.jpg', category: 'Viajes', title: 'Playa', date: new Date('2024-05-14'), width: 1200, height: 800 },
+    // { id: 7, src: './fotos/Viajes/photo1.jpg', category: 'Viajes', title: 'Playa', date: new Date('2024-05-14'), width: 1200, height: 800 },
   ];
 
   // Ordenar por fecha (más recientes primero)
