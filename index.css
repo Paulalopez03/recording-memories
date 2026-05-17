@@ -1,0 +1,28 @@
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f9f7f4;
+  --text: #1a1a1a;
+  --text-muted: #888888;
+  --border: #e5e5e5;
+  --accent: #000000;
+  --cream: #f5f2ed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
